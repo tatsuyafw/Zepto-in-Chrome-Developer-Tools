@@ -1,0 +1,15 @@
+{
+  "name": "Zepto in Chrome Developer Tools",
+  "version": "0.1.0.0",
+  "manifest_version": 2,
+  "description": "Zepto in Chrome Developer Tools",
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "append-script.js" ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [ "zepto-v1.1.6.min.js" ],
+  "permissions": [ "<all_urls>" ]
+}
